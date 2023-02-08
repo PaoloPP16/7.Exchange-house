@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Cambio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 class="titulo ">Casa de Cambio</h1>
+    <h2
+        <h3 class="textoSub">De:</h3>   
+        <select class="selec1" id="originCurrency" onchange="getValue()"> 
+        <option value="valorSoles" id="solesId">Soles</option>
+        <option value="valorDolar" id="dollarId">Dolar</option>
+        <option value="valorEuros" id="euroId">Euros</option>
+        </select><br><br>
+    </h2>
+
+    <div class="textoMoneda">
+        <textarea name =""  id="imputId" cols = "30" rows="2" ></textarea> 
+    </div>
+    <button onclick="convertir()" class="button" id="buttonId">
+        Cambiar
+    </button>
+    <hr>
+    <h2 class="resultado">Resultado</h2>
+    <h4 class="convertir"> Convertir A:</h4>
+    <div id="total"></div>
+    <script src="main.js" ></script>
+    
+</body>
+</html>
+
+ 
